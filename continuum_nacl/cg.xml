@@ -1,0 +1,23 @@
+<ForceField>
+ <AtomTypes>
+  <Type name="cg-Na" class="Na" element="Na" mass="22"/>
+  <Type name="cg-Cl" class="Cl" element="Cl" mass="35"/>
+ </AtomTypes>
+ <Residues>
+  <Residue name="CAT">
+   <Atom name="Na" type="cg-Na"/>
+  </Residue>
+  <Residue name="AN">
+   <Atom name="Cl" type="cg-Cl"/>
+  </Residue>
+ </Residues>
+ <NonbondedForce coulomb14scale="0.833333" lj14scale="0.5">
+  <Atom type="cg-Na" charge="1.0" sigma="0.2" epsilon="0.1"/>
+  <Atom type="cg-Cl" charge="-1.0" sigma="0.2" epsilon="0.1"/>
+ </NonbondedForce>
+ <myGBSAOBCForce>
+   <Atom type="cg-Na" charge="1.0" radius="0.2" scale="1"/>
+   <Atom type="cg-Cl" charge="-1.0" radius="0.2" scale="1"/>
+ </myGBSAOBCForce>
+</ForceField>
+
