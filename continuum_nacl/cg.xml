@@ -12,8 +12,8 @@
   </Residue>
  </Residues>
  <NonbondedForce coulomb14scale="0.833333" lj14scale="0.5">
-  <Atom type="cg-Na" charge="1.0" sigma="0.2" epsilon="0.1"/>
-  <Atom type="cg-Cl" charge="-1.0" sigma="0.2" epsilon="0.1"/>
+  <Atom type="cg-Na" charge="1.0" sigma="0.2" epsilon="0.01"/>
+  <Atom type="cg-Cl" charge="-1.0" sigma="0.2" epsilon="0.01"/>
  </NonbondedForce>
  <myGBSAOBCForce>
    <Atom type="cg-Na" charge="1.0" radius="0.2" scale="1"/>
