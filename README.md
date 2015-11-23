@@ -6,5 +6,5 @@ Most of the examples are in Juputer Notebook format (`*.ipynb`) that can preview
 
 Description of the examples:
 
-- [`continuum_na`](continuum_na/). Aqueous 1:1 electrolyte solution using a continuum solvent together
+- [`continuum_na`](continuum_nacl/nacl.ipynb). Aqueous 1:1 electrolyte solution using a continuum solvent together
   with Ewald summation. The simulated cation-anion PMF is compared with Debye-Hückel theory.
