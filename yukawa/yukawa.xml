@@ -1,0 +1,27 @@
+<ForceField>
+  
+ <AtomTypes>
+  <Type name="atom0" class="A0" element="Na" mass="22"/>
+  <Type name="atom1" class="A1" element="Cl" mass="22"/>
+ </AtomTypes>
+ 
+ <Residues>
+  <Residue name="SQR">
+   <Atom name="A0" type="atom0"/>
+   <Atom name="A1" type="atom1"/>
+   <Atom name="A2" type="atom0"/>
+   <Atom name="A3" type="atom1"/>
+  </Residue>
+ </Residues>
+
+ <CustomNonbondedForce energy="2.5*lB*charge1*charge2/r*exp(-r*kappa) + 4*sqrt(epsilon1*epsilon2)*(s/r)^12; s=0.5*(sigma1+sigma2)" bondCutoff="3">
+   <GlobalParameter name="lB" defaultValue="0.7"/>
+   <GlobalParameter name="kappa" defaultValue="0.0"/>
+   <PerParticleParameter name="sigma"/>
+   <PerParticleParameter name="epsilon"/>
+   <PerParticleParameter name="charge"/>
+   <Atom type="atom0" charge="1.0" sigma="0.4" epsilon="0.1"/>
+   <Atom type="atom1" charge="-1.0" sigma="0.4" epsilon="0.1"/>
+ </CustomNonbondedForce>
+
+</ForceField>
