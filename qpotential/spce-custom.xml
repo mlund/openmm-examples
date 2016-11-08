@@ -18,11 +18,11 @@
   <HarmonicAngleForce>
     <Angle class1="HW" class2="OW" class3="HW" angle="1.91061193216" k="836.8"/>
   </HarmonicAngleForce>
-  <CustomNonbondedForce energy="charge1*charge2*wolf(r) + 4*epsilon*((sigma/r)^12-(sigma/r)^6); sigma=0.5*(sigma1+sigma2); epsilon=sqrt(epsilon1*epsilon2)" bondCutoff="3">
+  <CustomNonbondedForce energy="to be defined..." bondCutoff="3">
     <GlobalParameter name="alpha" defaultValue="1.0"/>
+    <PerParticleParameter name="charge"/>
     <PerParticleParameter name="sigma"/>
     <PerParticleParameter name="epsilon"/>
-    <PerParticleParameter name="charge"/>
     <Atom type="spce-O" charge="-0.8476" sigma="0.31657195050398818" epsilon="0.6497752"/>
     <Atom type="spce-H" charge="0.4238" sigma="1" epsilon="0"/>
   </CustomNonbondedForce>

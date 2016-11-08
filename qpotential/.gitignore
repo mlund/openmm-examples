@@ -1,4 +1,10 @@
 *.chk
 *.pdb
 *.dcd
+*.xvg
+*.xpm
+*.xtc
+*.tpr
+*.ndx
+*.gro
 *~
